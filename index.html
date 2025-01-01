@@ -1,27 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cuatro Support</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Instructions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .phase {
+            margin-bottom: 20px;
+            background-color: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            display: inline-block;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        .content {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Welcome to Cuatro Support</h1>
-  </header>
 
-  <section>
-    <h2>FAQs</h2>
-    <ul>
-      <li><strong>How do I play Cuatro?</strong></li>
-      <li><strong>How can I report a bug?</strong></li>
-    </ul>
-  </section>
+    <div class="container">
+        <h1>How to Play the Game</h1>
+        <p>Follow the instructions for each phase and advance through the game. Make sure to understand the changes in scoring as the game progresses!</p>
+        
+        <div class="phase">
+            <h2>Phase 1: Basic Rules</h2>
+            <p>In Phase 1, each player rolls the dice, and the total amount in the bank is added by what is rolled. If a player decides to bank, the total amount is added to their score. The players that bank wait until the round is over. The round ends when all players have banked or a 4 is rolled, which resets the bank total to zero. Everyone that banked keeps their score. Phase 1 has 10 rounds.</p>
+        </div>
 
-  <section>
-    <h2>Contact</h2>
-    <p>If you need help, please contact us at <a href="mailto:austadbr@gmail.com">austadbr@gmail.com</a></p>
-  </section>
+        <div class="phase">
+            <h2>Phase 2: Scoring Changes</h2>
+            <p>In Phase 2, the scoring changes by making a 5 worth 50 points. All other rules carry over from Phase 1. Phase 2 has 10 rounds.</p>
+        </div>
+
+        <div class="phase">
+            <h2>Phase 3: Higher Value for 1</h2>
+            <p>In Phase 3, the scoring carries over from Phase 2, but now a 1 is worth 100 points. Phase 3 has 10 rounds.</p>
+        </div>
+
+        <div class="phase">
+            <h2>Phase 4: Doubling with 2</h2>
+            <p>In Phase 4, the scoring carries over from Phases 1 and 2, but now if a 2 is rolled, it doubles the amount in the bank. Phase 4 has 10 rounds.</p>
+        </div>
+
+        <div class="phase">
+            <h2>Phase 5: Tripling with 3</h2>
+            <p>In Phase 5, the scoring carries over from Phases 1, 2, and 3, but now if a 3 is rolled, it triples the amount in the bank. Phase 5 has 10 rounds.</p>
+        </div>
+
+        <div class="content">
+            <h2>Game Actions</h2>
+            <button class="button" onclick="alert('Add Player functionality not implemented in HTML.')">Add Player</button>
+            <button class="button" onclick="alert('Start Game functionality not implemented in HTML.')">Start Game</button>
+            <button class="button" onclick="alert('Bank Score functionality not implemented in HTML.')">Bank Score</button>
+            <button class="button" onclick="alert('End Game functionality not implemented in HTML.')">End Game</button>
+        </div>
+
+        <div class="content">
+            <h2>Rules for Special Dice Rolls</h2>
+            <p>Players will use dice to determine scores. Special rules apply for specific dice numbers:</p>
+            <ul>
+                <li><strong>Roll a 4:</strong> Resets the bank to zero.</li>
+                <li><strong>Roll a 5 (Phase 2 and beyond):</strong> Worth 50 points.</li>
+                <li><strong>Roll a 1 (Phase 3 and beyond):</strong> Worth 100 points.</li>
+                <li><strong>Roll a 2 (Phase 4 and beyond):</strong> Doubles the bank amount.</li>
+                <li><strong>Roll a 3 (Phase 5 and beyond):</strong> Triples the bank amount.</li>
+            </ul>
+        </div>
+    </div>
+
 </body>
 </html>
 
